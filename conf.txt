@@ -1,0 +1,69 @@
+Bot Configuration on 3Commas:
+
+Bot Type:
+
+DCA Bot: This is the correct bot type for our strategy.
+Exchange and Pair:
+
+Exchange: Select the exchange where you want to trade (e.g., Binance, Coinbase).
+Pair: Set the trading pair to BTC_USDT (as specified in your Python script).
+Strategy:
+
+Long: Our Python script only handles long positions.
+Base Order Size:
+
+Set this to the amount of USDT you want to use for each initial order.
+Recommendation: Start with a small amount until you've thoroughly tested the bot.
+Safety Order Size:
+
+This is the amount of USDT used for safety orders (if you were using them).
+Note: Our Python script does not utilize Safety Orders, so these will not be triggered. Set this to a small amount, or to zero.
+Take Profit:
+
+This is the percentage gain you want to achieve before closing a deal.
+Note: The python script does not contain any take profit logic, so this setting will be used by 3commas. If you want to control the take profit with your python script, set this to a very high percentage.
+Safety Order Step Scale:
+
+This is the percentage increase in price between safety orders.
+Note: Our python script does not utilize Safety Orders.
+Safety Order Volume Scale:
+
+This is the multiplier for the size of safety orders.
+Note: Our python script does not utilize Safety Orders.
+Max Active Safety Orders:
+
+The maximum number of safety orders the bot can place.
+Note: Our python script does not utilize Safety Orders.
+Start Condition:
+
+Manual: Since our Python script controls the entry signal, set this to "Manual". Your Python script will initiate deals.
+Deal Start Conditions:
+
+Leave this blank. The python script creates the deals.
+Trading View Custom Signal:
+
+This setting is not used by our python script.
+Cooldown Between Deals:
+
+This is the time the bot waits before starting a new deal.
+Recommendation: Set a reasonable cooldown period (e.g., 1-5 minutes) to avoid rapid deal creation.
+Max Active Deals:
+
+The maximum number of deals the bot can have open at once.
+Recommendation: Start with a low number (e.g., 1-2) until you're confident in the bot's performance.
+Simultaneous Deals per Same Instrument:
+
+This is the maximum number of deals the bot can have open for the same trading pair.
+Recommendation: Set this to 1, as our bot is designed to handle one deal at a time.
+Stop Loss:
+
+This is the percentage loss at which the bot will close a deal.
+Recommendation: Set a stop-loss percentage to manage risk.
+Trailing Stop Loss:
+
+This is a dynamic stop loss that adjusts as the price moves in your favor.
+Recommendation: Use trailing stop loss, or a regular stop loss, to manage risk.
+Other Settings:
+
+Review all other settings and adjust them to your preferences.
+
