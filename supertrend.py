@@ -74,7 +74,7 @@ def calculate_supertrend(candles, factor, atr_period):
         else:
             upper = basic_upper
             lower = basic_lower
-            st = lower # starting with uptrend.
+            st = lower 
 
         upper_band.append(upper)
         lower_band.append(lower)
