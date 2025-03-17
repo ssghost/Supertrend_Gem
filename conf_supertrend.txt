@@ -1,0 +1,46 @@
+General Settings:
+
+Bot Name:
+Give your bot a descriptive name (e.g., "Supertrend BTC/USDT").
+Exchange:
+Select the exchange where you want to trade.
+Pair:
+Choose the trading pair (e.g., BTC/USDT). This must match the pair defined in your Python script.
+Bot Type:
+This is likely to be a "Composite Bot" or a "Signal Bot" depending on your 3commas account level. The important part is that the start condition is set to manual.
+Strategy:
+This is where the main difference lies. Because the python script generates the signals, the start condition here must be set to "Manual".
+2. Deal Settings:
+
+Base Order Size:
+Set the amount of your base order. The python script itself does not manage order sizes, so this setting is very important.
+Safety Order Size:
+Because the python script does not use safety orders, it is suggested to either disable them, or set them to a very low value.
+Take Profit:
+Configure your desired take-profit percentage. This is independent of the Python script's logic.
+Stop Loss:
+Very Important: Set a stop-loss percentage to manage risk. The Python script does not include built-in stop-loss functionality.
+Start Condition:
+Manual: This is the most important setting. The python script will send the signal to 3commas, so the 3commas bot must be set to manual start.
+Deal Start Conditions:
+Leave this blank.
+Cooldown Between Deals:
+Set a cooldown period to prevent the bot from opening excessive deals in quick succession.
+Max Active Deals:
+Limit the maximum number of simultaneously open deals.
+Simultaneous Deals Per Same Pair:
+Limit the number of deals per pair.
+3. Advanced Settings:
+
+Leverage:
+If applicable, set your leverage according to your risk tolerance.
+Deal Close Condition:
+Configure how the deals should be closed. This is in addition to the python script closing deals.
+Key Considerations:
+
+Python Script Synchronization:
+Ensure that the trading pair and timeframe in your 3Commas bot settings match those in your Python script.
+Risk Management:
+Pay close attention to stop-loss settings, as the Python script does not handle this.
+Backtesting and Testing:
+Thoroughly test your bot in paper trading mode before deploying it with real funds.
